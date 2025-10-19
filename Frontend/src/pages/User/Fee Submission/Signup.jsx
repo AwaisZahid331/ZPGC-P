@@ -50,8 +50,8 @@ const SignupModal = ({ onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Signup Data:', formData);
-    // Here you would typically send data to your backend
-    alert('Signup successful! Student ID: ' + formData.studentId);
+    // This is just a demo form - the actual API call is in SignupModal.jsx
+    alert('This is a demo form. Please use the Signup Modal for actual registration.');
     onClose();
   };
 
@@ -233,10 +233,14 @@ const SignupModal = ({ onClose }) => {
                   onChange={handleInputChange}
                 >
                   <option value="">Select Semester</option>
-                  <option value="1st">1st Semester/Year</option>
-                  <option value="2nd">2nd Semester/Year</option>
-                  <option value="3rd">3rd Semester/Year</option>
-                  <option value="4th">4th Semester/Year</option>
+                  <option value="1st">1st Semester</option>
+                  <option value="2nd">2nd Semester</option>
+                  <option value="3rd">3rd Semester</option>
+                  <option value="4th">4th Semester</option>
+                  <option value="5th">5th Semester</option>
+                  <option value="6th">6th Semester</option>
+                  <option value="7th">7th Semester</option>
+                  <option value="8th">8th Semester</option>
                 </select>
               </div>
             </div>

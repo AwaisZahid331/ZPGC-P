@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
+import AuthStatus from "./AuthStatus";
 
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -244,6 +245,11 @@ const Navbar = () => {
             >
               Fee Submission
             </Link>
+          </div>
+          
+          {/* Auth Status */}
+          <div className="px-4 py-2 bg-gray-100 border-t border-gray-200">
+            <AuthStatus />
           </div>
         </div>
       </nav>
